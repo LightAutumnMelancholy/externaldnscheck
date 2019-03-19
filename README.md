@@ -6,36 +6,38 @@ This could be used in production to check, you can easily hardcode if you requir
 
 Exmaple JSON syntax:
 
-{
-            "machines": [
-                {
-                    "id": "rdudc1.gopda.com",
-                    "RecordType": "A"
-                },
-                { 
-                    "id": "rdudc2.gopda.com",
-                    "RecordType": "A"
-                }
-            ],
-            "databases": [
-                {
-                    "id": "dbwhatever.gopda.com",
-                    "RecordType": "A"
-                },
-                {
-                    "id": "dbhost02",
-                    "RecordType": "CNAME"
-                } 
-            ],
-            "loadbalancers": [
-                {
-                    "id": "elb01",
-                    "RecordType": "A"
-                 },
-                {
-                    "id": "nlb01",
-                    "RecordType": "A"
-                 }
-            ]
-}
+
+
+    {
+                "machines": [
+                    {
+                        "id": "host1.domain.com",
+                        "RecordType": "A"
+                    },
+                    { 
+                        "id": "host2.domain.com",
+                        "RecordType": "A"
+                    }
+                ],
+                    "databases": [
+                    {
+                        "id": "dbwhatever.domain.com",
+                        "RecordType": "A"
+                    },
+                    {
+                        "id": "dbhost02",
+                        "RecordType": "CNAME"
+                    } 
+                ],
+                "loadbalancers": [
+                    {
+                        "id": "elb01",
+                        "RecordType": "A"
+                     },
+                    {
+                        "id": "nlb01",
+                        "RecordType": "A"
+                     }
+                ]
+    }
 
